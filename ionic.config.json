@@ -1,0 +1,15 @@
+{
+  "name": "fp-ep-1",
+  "integrations": {
+    "cordova": {},
+    "enterprise": {
+      "keyId": 2399,
+      "productKey": "key_c31beb787017481682e3733c7c8bc2ef",
+      "appId": "7b34c3e7",
+      "registries": [
+        "@ionic-enterprise;https://registry.ionicframework.com/"
+      ]
+    }
+  },
+  "type": "angular"
+}
