@@ -63,7 +63,6 @@ export class LoginPage implements OnInit {
     // Ask for fingerprint
     if (await this.vault.isBiometricsAvailable()) {
       // this.vault.unlock()
-
       this.vault.getSession().then(
         resolve => {
           console.log("Access Granted")
@@ -73,6 +72,10 @@ export class LoginPage implements OnInit {
         rejet => console.log("Access Denied")
       );
     }
+  }
+
+  async lockVault(){
+    return await this.vault.lockOut();
   }
 
   async clearSession(){
