@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>intro</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
 
-<ion-content>
+  <ion-title class="ion-padding-vertical ion-text-center">Launch External App</ion-title>
+
+  <!-- <ion-item lines="full">
+    <ion-label>Facebook {{check(appConfig[2])}}: </ion-label>
+    <ion-label slot="end">
+      <ion-button type="submit" color="primary" expand="block" (click)="canCheckAndLaunch(appConfig[2])">Open
+      </ion-button>
+    </ion-label>
+  </ion-item> -->
+
+  <ion-label class="ion-padding-bottom">If both app are installed pls uninstall any one to check the launching playstore : </ion-label>
+
+  <ion-item lines="full">
+    <ion-label>VR App : </ion-label>
+    <ion-label slot="end">
+      <ion-button type="submit" color="primary" expand="block" (click)="canCheckAndLaunch(appConfig[1])">Open
+      </ion-button>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label>Companion App : </ion-label>
+    <ion-label slot="end">
+      <ion-button type="submit" color="primary" expand="block" (click)="canCheckAndLaunch(appConfig[0])">Open
+      </ion-button>
+    </ion-label>
+  </ion-item>
+
+
+  <ion-button  class="ion-padding" color="success" expand="block" (click)="routeNextPage()">Open Fingerprint SPIKE
+  </ion-button>
 
 </ion-content>

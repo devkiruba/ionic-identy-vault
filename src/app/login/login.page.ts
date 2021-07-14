@@ -83,6 +83,6 @@ export class LoginPage implements OnInit {
   }
 
   routeNextPage() {
-    this.router.navigate(['/intro']);
+    this.router.navigate(['/home']);
   }
 }
